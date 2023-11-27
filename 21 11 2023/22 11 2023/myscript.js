@@ -23,9 +23,7 @@ const genText = () => (arg) =>
         const idJson = myJson.filter((post) => post.id == id)[0];
         idprompt.textContent = "ID:" + id;
         div.textContent = "BODY: " + idJson["body"];
-        document.querySelector("titleprompt");
         titleprompt.textContent = "TITLE: "+ idJson["title"];
-        document.querySelector("idprompt");
       })
       .catch((error) => console.error("Error: ", error))
 }
